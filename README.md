@@ -1,99 +1,110 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+# API de Controle de Desenvolvedores
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/jonatasdamata/CrudApiNestJS/blob/main/LICENSE) 
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Descrição
+Uma API CRUD desenvolvida com **NestJS** para gerenciar informações de desenvolvedores. Esta API permite realizar operações de listagem, criação, atualização e exclusão de desenvolvedores, seguindo as melhores práticas de desenvolvimento de APIs RESTful.
 
-## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Funcionalidades
 
-## Project setup
+- **Listar Desenvolvedores**: Obtém uma lista de todos os desenvolvedores.
+- **Obter Desenvolvedor por ID**: Permite buscar um desenvolvedor específico usando seu ID.
+- **Criar Novo Desenvolvedor**: Adiciona um novo desenvolvedor ao sistema.
+- **Atualizar Desenvolvedor**: Atualiza informações de um desenvolvedor existente.
+- **Excluir Desenvolvedor**: Remove um desenvolvedor do sistema.
+- 
 
-```bash
-$ npm install
-```
+## Tecnologias Utilizadas
 
-## Compile and run the project
+- **Node.js**
+- **NestJS**
+- **TypeScript**
+- **TypeORM** 
+- **Postman** 
 
-```bash
-# development
-$ npm run start
 
-# watch mode
-$ npm run start:dev
 
-# production mode
-$ npm run start:prod
-```
+## Como Executar o Projeto
 
-## Run tests
+### Pré-requisitos
+
+1. Certifique-se de ter o [Node.js](https://nodejs.org/) instalado.
+2. Certifique-se de ter o [npm](https://www.npmjs.com/) instalado (geralmente já vem com o Node.js).
+3. Execute o seguinte comando para instalar as dependências do projeto:
 
 ```bash
-# unit tests
-$ npm run test
+npm install sqlite3 nanoid reflect-metadata rxjs class-transformer class-validator typeorm
+````
 
-# e2e tests
-$ npm run test:e2e
 
-# test coverage
-$ npm run test:cov
-```
+## Executando a Aplicação
 
-## Deployment
-
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
-
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
-
+### Clone este repositório:
 ```bash
-$ npm install -g mau
-$ mau deploy
+git clone https://github.com/jonatasdamata/CrudApiNestJS
 ```
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+### Navegue até o diretório do projeto:
+```bash
+cd CrudApiNestJS
+```
+A API estará disponível em http://localhost:3000
 
-## Resources
 
-Check out a few resources that may come in handy when working with NestJS:
+## Endpoints da API
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+| Método | Endpoint               | Descrição                             |
+|--------|------------------------|---------------------------------------|
+| GET    | /developers            | Lista todos os desenvolvedores        |
+| GET    | /developers/{id}       | Obtém um desenvolvedor pelo ID        |
+| POST   | /developers            | Cria um novo desenvolvedor            |
+| PATCH  | /developers/{id}       | Atualiza um desenvolvedor existente   |
+| DELETE | /developers/{id}       | Remove um desenvolvedor               |
 
-## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+## Exemplos de Uso
 
-## Stay in touch
+### Listar Desenvolvedores
+```http
+GET http://localhost:3000/developers
+```
+### Obter Desenvolvedor
+```http
+GET http://localhost:3000/developers/{id}
+```
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+### Criar Desenvolvedor
+```http
+POST http://localhost:3000/developers
+Content-Type: application/json
 
-## License
+{
+    "name": "Maria",
+    "email": "maria@teste.com",
+    "dateOfBirth": "1996-02-10"
+}
+```
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+### Atualizar Desenvolvedor
+```http
+PATCH http://localhost:3000/developers/3
+Content-Type: application/json
+
+{
+    "email": "jhon@teste.com"
+}
+```
+
+### Deletar Desenvolvedor
+```http
+DELETE http://localhost:3000/developers/dev_DzITx-bXu_6IgXYWqoVrs
+```
+
+
+
+
+## Autor
+
+Jonatas da Mata <br>
+https://www.linkedin.com/in/jonatasdamata/
